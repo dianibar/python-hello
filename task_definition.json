@@ -1,4 +1,5 @@
 {
+    "executionRoleArn": "arn:aws:iam::145427425754:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
             "name": "fargate-app",
