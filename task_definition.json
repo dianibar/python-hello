@@ -2,7 +2,7 @@
     "executionRoleArn": "arn:aws:iam::145427425754:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
-            "name": "fargate-app",
+            "name": "test-145427425754-Container",
             "image": "public.ecr.aws/docker/library/httpd:latest",
             "cpu": 0,
             "portMappings": [
@@ -25,7 +25,7 @@
             "volumesFrom": []
         }
     ],
-    "family": "sample-fargate",
+    "family": "test-ecs-TaskDefinition-6EMMWoyoN5GQ",
     "networkMode": "awsvpc",
     "volumes": [],
     "placementConstraints": [],
