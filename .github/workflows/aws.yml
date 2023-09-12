@@ -58,14 +58,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ env.AWS_REGION }}
-
-    - name: Deploy to AWS CloudFormation
-      uses: aws-actions/aws-cloudformation-github-deploy@v1
-      with:
-        name: MyStack
-        template: test-stack.yaml
-        parameter-overrides: "VPC=vpc-00015ebe2ea0fe346,SubnetA=subnet-0be3d59add45f690e,SubnetB=subnet-0eac73bc5ef7c76d8"    
+        aws-region: ${{ env.AWS_REGION }}    
 
     - name: Login to Amazon ECR
       id: login-ecr
